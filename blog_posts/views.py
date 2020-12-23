@@ -23,4 +23,4 @@ def home(request):
   return render(request, 'blog_posts/home.html', context) # this is still using a httpresponse
 
 def about(request):
-  return render(request, 'blog_posts/about.html')
+  return render(request, 'blog_posts/about.html', {'title': 'About Page'})
