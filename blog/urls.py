@@ -18,5 +18,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', include('blog_posts.urls'))
+    path('', include('blog_posts.urls')) #routes are similar to rails
 ]
